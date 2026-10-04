@@ -1,0 +1,28 @@
+PROOFOFREALITY AI - PROJECT FLOW
+
+Browser
+  |
+  v
+index.html
+  |
+  +--> style.css
+  |
+  +--> app.js
+          |
+          v
+       Flask app.py
+          |
+          +--> analyzer.py
+          |      +--> SHA-256
+          |      +--> PDF text extraction
+          |      +--> optional OCR
+          |      +--> risk assessment
+          |
+          +--> database.py
+                 |
+                 v
+              SQLite
+
+Important:
+This prototype reports risk indicators and should not be presented as
+definitive forensic authentication.
